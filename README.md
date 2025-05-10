@@ -187,6 +187,8 @@ The router has routes for both interfaces and can route traffic between hosts on
 ### Configured A Static Route
 ![Configured-A-Static-Route]()
 
+---
+
 ### Configured A Static Route
 ![Configured-A-Static-Route2]()
 

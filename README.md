@@ -110,7 +110,7 @@ The switch will periodically flush old entries.
 Well to achieve this action we will use 'show ip route'
 
 ### Routing Table
-![Routing-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Routing-Table.png)
+![Examine-Routing-Table]()
 
 The router has a connected route for the 10.10.10.0/24 network and a local route for 10.10.10.1/24
 These routes were automatically created when the IP address 10.10.10.1/24 was enabled on interface GigabitEthernet0/0
@@ -174,7 +174,7 @@ Best practice is to leave interfaces shutdown until they are brought into use.
 Command to use 'show ip route'
 
 ### Routing Table
-![Routing-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configured-A-Static-Route.png)
+![Routing-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Routing-Table.png)
 
 The router has routes for both interfaces and can route traffic between hosts on the 10.10.10.0/24 and 10.10.20.0/24 networks.
 

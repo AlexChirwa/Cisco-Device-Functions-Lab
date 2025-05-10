@@ -110,7 +110,7 @@ The switch will periodically flush old entries.
 Well to achieve this action we will use 'show ip route'
 
 ### Routing Table
-![Examine-Routing-Table]()
+![Examine-Routing-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Examine-Routing-Table.png)
 
 The router has a connected route for the 10.10.10.0/24 network and a local route for 10.10.10.1/24
 These routes were automatically created when the IP address 10.10.10.1/24 was enabled on interface GigabitEthernet0/0
@@ -153,11 +153,6 @@ Best practice is to leave interfaces shutdown until they are brought into use.
 ### Bring Interface Online
 ![Interface-GigabitEthernet01](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Interface-GigabitEthernet01.png)
 
----
-
-![Interface-GigabitEthernet01-Online](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Interface-GigabitEthernet01-Online.png)
-
-
 (Switch interfaces are already online by default. There is no need to enter the 'no shutdown' command on switches unless an administrator has previously explicitly entered the 'shutdown' command on an interface.)
 
 ---
@@ -166,6 +161,10 @@ Best practice is to leave interfaces shutdown until they are brought into use.
 
 ### Verify Interface Online
 ![Bring-Interface-Online](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Bring-Interface-Online.png)
+
+---
+
+![Interface-GigabitEthernet01-Online](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Interface-GigabitEthernet01-Online.png)
 
 ---
 
@@ -180,7 +179,8 @@ The router has routes for both interfaces and can route traffic between hosts on
 
 ---
 
-### 14. Configure a static route to 10.10.30.0/24 with a next hop addres of 10.10.10.2 in config t 'ip route _ip_ _subnet mask_ _next hop_'
+### 14. Configure a static route to 10.10.30.0/24 with a next hop address of 10.10.10.2 in config t  use this syntax ('ip route _ip address_ _subnet mask_ _next hop_') 
+'ip route 10.10.30.0 255.255.255.0 10.10.10.2'
 
 ### Configured A Static Route
 ![Configured-A-Static-Route0](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configured-A-Static-Route0.png)
@@ -202,4 +202,13 @@ The router has routes for both interfaces and can route traffic between hosts on
 ![Configured-A-Static-Route2](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configured-A-Static-Route2.png)
 
 The router has routes to its locally connected networks, and also to 10.10.30.0/24 which is available via 10.10.10.2
+
+
+### 📁 Screenshots Folder
+To view the diagrams and outputs, see the /screenshots folder in this repo.
+
+### 🧑‍💻 Author
+Created by Neil Anderson @ flackbox.com, worked on by Alex Joshua Chirwa as part of CCNA lab practice. 
+Want to learn more or contribute? Drop a ⭐ and let’s connect!
+
 

@@ -1,4 +1,4 @@
-# 🔧Cisco-Device-Functions-Lab
+### 🔧Cisco-Device-Functions-Lab
 
 ---
 This lab explores the **MAC address tables** on Cisco IOS switches and the **routing tables** on Cisco IOS routers helping you visualize how packets move across devices, interfaces, and networks. It’s a hands-on Packet Tracer lab designed for early-stage networking students or anyone prepping for their **CCNA**.

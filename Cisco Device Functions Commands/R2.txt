@@ -1,0 +1,25 @@
+R2>en
+R2#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol 
+GigabitEthernet0/0     10.10.10.2      YES manual up                    up 
+GigabitEthernet0/1     unassigned      YES unset  administratively down down 
+GigabitEthernet0/2     unassigned      YES unset  administratively down down 
+Vlan1                  unassigned      YES unset  administratively down down
+R2#
+R2#show interface gig0/0
+GigabitEthernet0/0 is up, line protocol is up (connected)
+  Hardware is CN Gigabit Ethernet, address is 0060.2fb3.9152 (bia 0060.2fb3.9152)
+
+R2#ping 10.10.10.3
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.10.10.3, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 0/0/3 ms
+
+R2#ping 10.10.10.4
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.10.10.4, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 0/0/1 ms

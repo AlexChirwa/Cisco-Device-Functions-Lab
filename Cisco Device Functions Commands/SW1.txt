@@ -1,0 +1,39 @@
+SW1#
+SW1#show mac address-table dynamic
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    0001.9626.8970    DYNAMIC      Fa0/24
+   1    000c.cf84.8418    DYNAMIC      Fa0/24
+   1    0060.2fb3.9152    DYNAMIC      Fa0/2
+   1    0090.2b82.ab01    DYNAMIC      Fa0/1
+   1    00d0.9701.02a9    DYNAMIC      Fa0/24
+SW1#
+# why don't we see mac address in the mac address-table dynamic
+SW1>en 
+SW1#clear mac address-table dynamic
+SW1#show mac address-table dynamic
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    000c.cf84.8418    DYNAMIC      Fa0/24
+
+# Why do we see any mac addresses in the mac address-table dynamic? 
+# Devices in a real world network tend to be chatty and send traffic frequently. 
+# this causes the MAC address table to update (you may see less entries in Packet Tracer).
+# The switch will periodically flush old entries
+SW1#show mac address-table dynamic
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    000c.cf84.8418    DYNAMIC      Fa0/24
+   1    0090.2b82.ab01    DYNAMIC      Fa0/1

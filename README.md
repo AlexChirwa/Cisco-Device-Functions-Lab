@@ -12,7 +12,7 @@ This preconfigures each router with an IP address in the 10.10.10.0/24 network
 ---
 
 ### Lab Topology
-![Lab Topology]()
+![Lab Topology](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Lab-Topology.png)
 
 ### Verify the Switch MAC Address Table
 ### 1. Log into routers R1 to R4 and verify which interface is configures on the 10.10.10.0/24 network.
@@ -21,7 +21,7 @@ The 'show ip interface brief' command in priviledged exec mode (enable) shows wh
 on which interfaces, and the status of the interfaces.
 
 ### On all routers:
-![Show IP Interface Brief On All Routers]()
+![Show IP Interface Brief On All Routers](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Show-IP-Interface-Brief-On-All-Routers.png)
 
 For the 10.10.10.0/24 network, R1, R2, and R4 are using GigabitEthernet 0/0 were as R3 is using GigabitEthernet0/1
 
@@ -32,7 +32,7 @@ For the 10.10.10.0/24 network, R1, R2, and R4 are using GigabitEthernet 0/0 were
 How we are going to achieve this is by using the command in the priviledged exec mode 'show interface gig_/_' as shown in the image below.
 
 ### MAC Addresses
-![MAC-Addresses]()
+![MAC-Addresses](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/MAC-Addresses.png)
 
 R1 address is 0090.2682.ab01
 R2 address is 0060.2Fb3.9152
@@ -50,22 +50,22 @@ Success indicates the test packet reached the destination and the response to th
 verifying connectivity in both directions. It is not a concern if the first packet fails while the connection is set up, as shown in the output below.
 
 ### Verifying Connectivity Ping R2, R3 and R4 from R1
-![Verifying-Connectivity1]()
+![Verifying-Connectivity1](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Verifying-Connectivity1.png)
 
 ---
 
 ### Verifying Connectivity Ping R3 and R4 from R2
-![Verifying-Connectivity2]()
+![Verifying-Connectivity2](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Verifying-Connectivity2.png)
 
 ---
 
 ### Verifying Connectivity Ping R1, R2 and R4 from R3
-![Verifying-Connectivity3]()
+![Verifying-Connectivity3](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Verifying-Connectivity3.png)
 
 ---
 
 ### Verifying Connectivity Ping R1 and R2 from R4
-![Verifying-Connectivity4]()
+![Verifying-Connectivity4](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Verifying-Connectivity4.png)
 
 ---
 
@@ -74,14 +74,14 @@ verifying connectivity in both directions. It is not a concern if the first pack
 How we are going to achieve that is using the command 'show mac address-table dynamic' in priviledged exec mode, as shown below. (Ignore any other mac addresses in the table).
 
 ### SW1 MAC Address Table
-![SW1-MAC-Address-Table]()
+![SW1-MAC-Address-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/SW1-MAC-Address-Table.png)
 
 ---
 
 ### 5. Repeat on SW2
 
 ### SW2 MAC Address Table
-![SW2-MAC-Address-Table]()
+![SW2-MAC-Address-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/SW2-MAC-Address-Table.png)
 
 ---
 
@@ -95,7 +95,7 @@ SW1#clear mac address-table dynamic
 ### 7. Show the dynamic MAC Address Table on SW1. Do you see any MAC addresses? Why or why not?
 
 ### SW1 Show Dynamic MAC Address Table
-![SW1-Show-Dynamic-MAC-Address-Table]()
+![SW1-Show-Dynamic-MAC-Address-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/SW1-Show-Dynamic-MAC-Address-Table.png)
 
 Devices in a real world network tend to be chaaty and send traffic frequently, this causes the MAC address table to update (you may see less entries in PAcket Tracer).
 
@@ -110,7 +110,7 @@ The switch will periodically flush old entries.
 Well to achieve this action we will use 'show ip route'
 
 ### Routing Table
-![Routing-Table]()
+![Routing-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Routing-Table.png)
 
 The router has a connected route for the 10.10.10.0/24 network and a local route for 10.10.10.1/24
 These routes were automatically created when the IP address 10.10.10.1/24 was enabled on interface GigabitEthernet0/0
@@ -126,7 +126,7 @@ Use:
 'ip address 10.10.20.1 255.255.255.0' in Interface configuration mode (config-if)
 
 ### Configure IP Address
-![Configure-IP-Address-10-10-20-1]()
+![Configure-IP-Address-10-10-20-1](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configure-IP-Address-10-10-20-1.png)
 
 ---
 
@@ -137,7 +137,7 @@ Pro tip: A router interface status is 'administrtatively down' by default. For a
 'show' commands are entered in Priviledged Exec mode (Enable)
 
 ### Verify The Configured IP Address
-![Configure-IP-Address]()
+![Configure-IP-Address](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configure-IP-Address.png)
 
 G0/0 was already brought online by an administrator but G0/1 is still shutdown.
 
@@ -151,7 +151,12 @@ This is typically done immediately after configuring an IP address on an interfa
 Best practice is to leave interfaces shutdown until they are brought into use.
 
 ### Bring Interface Online
-![Interface-GigabitEthernet01]()
+![Interface-GigabitEthernet01](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Interface-GigabitEthernet01.png)
+
+---
+
+![Interface-GigabitEthernet01-Online](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Interface-GigabitEthernet01-Online.png)
+
 
 (Switch interfaces are already online by default. There is no need to enter the 'no shutdown' command on switches unless an administrator has previously explicitly entered the 'shutdown' command on an interface.)
 
@@ -160,7 +165,7 @@ Best practice is to leave interfaces shutdown until they are brought into use.
 ### 12. Verify the status iof interfaces GigabitEthernet0/0 and GigabitEthernet0/1 now.
 
 ### Verify Interface Online
-![Bring-Interface-Online]()
+![Bring-Interface-Online](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Bring-Interface-Online.png)
 
 ---
 
@@ -169,16 +174,16 @@ Best practice is to leave interfaces shutdown until they are brought into use.
 Command to use 'show ip route'
 
 ### Routing Table
-![Routing-Table]()
+![Routing-Table](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configured-A-Static-Route.png)
 
 The router has routes for both interfaces and can route traffic between hosts on the 10.10.10.0/24 and 10.10.20.0/24 networks.
 
 ---
 
-### 14. Configure a static route to 10.10.20.0/24 with a next hop addres of 10.10.10.2 in config t 'ip route _ip_ _subnet mask_ _next hop_'
+### 14. Configure a static route to 10.10.30.0/24 with a next hop addres of 10.10.10.2 in config t 'ip route _ip_ _subnet mask_ _next hop_'
 
 ### Configured A Static Route
-![Configured-A-Static-Route0]()
+![Configured-A-Static-Route0](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configured-A-Static-Route0.png)
 
 ---
 
@@ -189,12 +194,12 @@ The router has routes for both interfaces and can route traffic between hosts on
 
 
 ### Configured A Static Route
-![Configured-A-Static-Route]()
+![Configured-A-Static-Route](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configured-A-Static-Route.png)
 
 ---
 
 ### Configured A Static Route
-![Configured-A-Static-Route2]()
+![Configured-A-Static-Route2](https://raw.githubusercontent.com/AlexChirwa/Cisco-Device-Functions-Lab/refs/heads/main/Lab%20screenshots/Configured-A-Static-Route2.png)
 
 The router has routes to its locally connected networks, and also to 10.10.30.0/24 which is available via 10.10.10.2
 
